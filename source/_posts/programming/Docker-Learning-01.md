@@ -1,8 +1,6 @@
 ---
 title: Docker 学习笔记（一）
-tags:
-  - Programming
-  - Docker
+tags: [Programming, Docker]
 date: 2017-10-03 10:12:10
 ---
 
