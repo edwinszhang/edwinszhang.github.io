@@ -1,7 +1,7 @@
 ---
-title: [Little book] Spring Boot 手记 001
-date: 2017-10-17 22:35:19
-tags: [Programming, Spring-boot, little-book]
+title: "[Little Book] Spring Boot 手记 001"
+date: 2017-10-17 23:21:09
+tags: [Programming, SpringBoot, littleBook]
 ---
 
 ## 官方文档
@@ -58,3 +58,6 @@ public class Application implements ApplicationRunner{
 ## Profile
 1 在 resources 目录下新建 application-${profile}.yml
 2 java -Dspring.profiles.active=${profile} -jar yourSpringBootJar.jar
+
+## 测试
+...
