@@ -5,11 +5,11 @@ tags: [Programming, SpringBoot, littleBook]
 ---
 
 ## 官方文档
-[Spring boot reference]: (https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+[Spring boot reference](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
 ## 简化代码
 使用 Spring boot 的终极目标就是简化繁杂的配置，使开发最简化。所以，我们需要以下几个东西。
-- [Lombok]: (https://projectlombok.org/)
+- [Lombok](https://projectlombok.org/)
 - Java 8 语法糖
 - Spring Data & Spring Data REST
 - RxJava(TODO)
