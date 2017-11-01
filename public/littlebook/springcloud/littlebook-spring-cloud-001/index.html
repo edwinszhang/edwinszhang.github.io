@@ -10,7 +10,7 @@
 <meta name="keywords" content="Programming,SpringBoot,LittleBook,SpringCloud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Little Book] Spring Cloud 手记 001">
-<meta property="og:url" content="http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/index.html">
+<meta property="og:url" content="http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/index.html">
 <meta property="og:site_name" content="Shuai">
 <meta property="og:description" content="官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud config 用 docker 进行 Build/Ship/R">
 <meta property="og:updated_time" content="2017-11-01T05:09:27.377Z">
@@ -69,7 +69,7 @@
       <ul>
         
         
-        <li><a class="icon" href="/2017/10/20/programming/develop-tools/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" href="/littlebook/programming/develop-tools/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -82,16 +82,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&text=[Little Book] Spring Cloud 手记 001"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&is_video=false&description=[Little Book] Spring Cloud 手记 001"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[Little Book] Spring Cloud 手记 001&body=Check out this article: http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&name=[Little Book] Spring Cloud 手记 001&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&text=[Little Book] Spring Cloud 手记 001"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&is_video=false&description=[Little Book] Spring Cloud 手记 001"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[Little Book] Spring Cloud 手记 001&body=Check out this article: http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&name=[Little Book] Spring Cloud 手记 001&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -183,16 +183,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&text=[Little Book] Spring Cloud 手记 001"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&is_video=false&description=[Little Book] Spring Cloud 手记 001"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[Little Book] Spring Cloud 手记 001&body=Check out this article: http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/2017/11/01/springcloud/littlebook-spring-cloud-001/&name=[Little Book] Spring Cloud 手记 001&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&text=[Little Book] Spring Cloud 手记 001"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&is_video=false&description=[Little Book] Spring Cloud 手记 001"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[Little Book] Spring Cloud 手记 001&body=Check out this article: http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&title=[Little Book] Spring Cloud 手记 001"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/&name=[Little Book] Spring Cloud 手记 001&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
