@@ -19,3 +19,7 @@ tags: [Programming, SpringBoot, LittleBook, SpringCloud]
 1. [断路器之 Hystrix](http://blog.csdn.net/liumiaocn/article/details/54015221)
 1. [统一配置管理之 spring cloud config](http://blog.csdn.net/liumiaocn/article/details/53941354)
 1. [用 docker 进行 Build/Ship/Run](http://blog.csdn.net/liumiaocn/article/details/53941354)
+
+## Sample
+1. [Spring Could Eureka](https://bitbucket.org/prometheus-imp/spring-cloud-eureka/)
+1. [Spring Could Service](https://bitbucket.org/prometheus-imp/spring-cloud-client)
