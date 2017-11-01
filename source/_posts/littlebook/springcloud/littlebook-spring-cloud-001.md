@@ -21,5 +21,4 @@ tags: [Programming, SpringBoot, LittleBook, SpringCloud]
 1. [用 docker 进行 Build/Ship/Run](http://blog.csdn.net/liumiaocn/article/details/53941354)
 
 ## Sample
-1. [Spring Could Eureka](https://bitbucket.org/prometheus-imp/spring-cloud-eureka/)
-1. [Spring Could Service](https://bitbucket.org/prometheus-imp/spring-cloud-client)
+[Spring Could Samples](https://bitbucket.org/account/user/prometheus-imp/projects/CLOUD)
