@@ -6,19 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud config 用 docker 进行 Build/Ship/">
+    <meta name="description" content="#IMG - Spring Cloud Projects 官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud co">
 <meta name="keywords" content="Programming,SpringBoot,LittleBook,SpringCloud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Little Book] Spring Cloud 手记 001">
 <meta property="og:url" content="http://shuai.in/littlebook/springcloud/littlebook-spring-cloud-001/index.html">
 <meta property="og:site_name" content="Shuai">
-<meta property="og:description" content="官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud config 用 docker 进行 Build/Ship/">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/897b1cc3ly1fl2qyqm1hgj20pk0cttco.jpg">
-<meta property="og:updated_time" content="2017-11-02T09:55:21.198Z">
+<meta property="og:description" content="#IMG - Spring Cloud Projects 官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud co">
+<meta property="og:updated_time" content="2017-11-07T04:32:06.157Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Little Book] Spring Cloud 手记 001">
-<meta name="twitter:description" content="官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud config 用 docker 进行 Build/Ship/">
-<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/897b1cc3ly1fl2qyqm1hgj20pk0cttco.jpg">
+<meta name="twitter:description" content="#IMG - Spring Cloud Projects 官方文档Spring CloudSpring Cloud Projects Reference 博客链接感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：  Spring Cloud 介绍 服务发现之 eureka 业务逻辑服务 API 网关之 Zuul 断路器之 Hystrix 统一配置管理之 spring cloud co">
     
     
         
@@ -98,7 +96,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方文档"><span class="toc-number">1.</span> <span class="toc-text">官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客链接"><span class="toc-number">2.</span> <span class="toc-text">博客链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sample"><span class="toc-number">3.</span> <span class="toc-text">Sample</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方文档"><span class="toc-number">1.</span> <span class="toc-text">官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客链接"><span class="toc-number">2.</span> <span class="toc-text">博客链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#坑"><span class="toc-number">3.</span> <span class="toc-text">坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sample"><span class="toc-number">4.</span> <span class="toc-text">Sample</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -137,7 +135,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p><img src="http://wx3.sinaimg.cn/mw690/897b1cc3ly1fl2qyqm1hgj20pk0cttco.jpg" alt="Spring Cloud Projects"></p>
+    <p><a href="http://wx3.sinaimg.cn/mw690/897b1cc3ly1fl2qyqm1hgj20pk0cttco.jpg" target="_blank" rel="external">#IMG - Spring Cloud Projects</a></p>
 <h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="http://projects.spring.io/spring-cloud/" target="_blank" rel="external">Spring Cloud</a><br><a href="http://projects.spring.io/spring-cloud/spring-cloud.html" target="_blank" rel="external">Spring Cloud Projects Reference</a></p>
 <h2 id="博客链接"><a href="#博客链接" class="headerlink" title="博客链接"></a>博客链接</h2><p>感谢博客园 liumiaocn 的总结，以下是系列原文链接汇总：</p>
 <ol>
@@ -149,6 +147,7 @@
 <li><a href="http://blog.csdn.net/liumiaocn/article/details/54309866" target="_blank" rel="external">统一配置管理之 spring cloud config</a></li>
 <li><a href="http://blog.csdn.net/liumiaocn/article/details/54611891" target="_blank" rel="external">用 docker 进行 Build/Ship/Run</a></li>
 </ol>
+<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><p><a href="http://blog.csdn.net/liumiaocn/article/details/54309866" target="_blank" rel="external">统一配置管理之 spring cloud config</a> 中的 client 端配置应放在 bootstrap.yml 中，<br>否则不会生效。详见<a href="https://bitbucket.org/prometheus-imp/spring-cloud-service-user/src/855e47813969185decfa96df70de3ab0b18568d4/src/main/resources/bootstrap.yml?at=master&amp;fileviewer=file-view-default" target="_blank" rel="external">bootstrap.yml</a></p>
 <h2 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h2><p><a href="https://bitbucket.org/account/user/prometheus-imp/projects/CLOUD" target="_blank" rel="external">Spring Could Samples</a></p>
 
   </div>
@@ -182,7 +181,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方文档"><span class="toc-number">1.</span> <span class="toc-text">官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客链接"><span class="toc-number">2.</span> <span class="toc-text">博客链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sample"><span class="toc-number">3.</span> <span class="toc-text">Sample</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方文档"><span class="toc-number">1.</span> <span class="toc-text">官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客链接"><span class="toc-number">2.</span> <span class="toc-text">博客链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#坑"><span class="toc-number">3.</span> <span class="toc-text">坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sample"><span class="toc-number">4.</span> <span class="toc-text">Sample</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
