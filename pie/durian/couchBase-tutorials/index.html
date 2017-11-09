@@ -10,12 +10,12 @@
 <meta name="keywords" content="programming,couchbase">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CouchBase的使用01">
-<meta property="og:url" content="http://shuai.in/durian/couchBase-tutorials/index.html">
+<meta property="og:url" content="http://shuai.in/pie/durian/couchBase-tutorials/index.html">
 <meta property="og:site_name" content="Shuai">
 <meta property="og:description" content="Preface本文主要基于CouchBase3.0的文档，概述基本概念与使用中注意的问题，希望能起到引导的作用。具体使用清自行阅读文档。CouchBase官网相关文档主要介绍了各个版本的特性，和针对不同的语言所相对应SDK的使用方法 Introduction对CouchBase背景感兴趣的同学可以阅读本段，如果你比较着急，可以自行跳过。  CouchBase = CouchDB + Membase">
 <meta property="og:image" content="http://2d.zol-img.com.cn/product/87/919/ce45drbn3kUU.png">
 <meta property="og:image" content="http://docs.couchbase.com/admin/admin/images/vbuckets.png">
-<meta property="og:updated_time" content="2017-11-09T08:31:09.518Z">
+<meta property="og:updated_time" content="2017-11-09T08:31:30.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CouchBase的使用01">
 <meta name="twitter:description" content="Preface本文主要基于CouchBase3.0的文档，概述基本概念与使用中注意的问题，希望能起到引导的作用。具体使用清自行阅读文档。CouchBase官网相关文档主要介绍了各个版本的特性，和针对不同的语言所相对应SDK的使用方法 Introduction对CouchBase背景感兴趣的同学可以阅读本段，如果你比较着急，可以自行跳过。  CouchBase = CouchDB + Membase">
@@ -71,10 +71,10 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/littlebook/docker/docker-learning-001/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" href="/durian/couchBase-tutorials/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
-        <li><a class="icon" href="/pie/durian/couchBase-tutorials/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" href="/pie/durian/java-jetty-server-in-junit/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -87,16 +87,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/durian/couchBase-tutorials/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/durian/couchBase-tutorials/&text=CouchBase的使用01"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/durian/couchBase-tutorials/&is_video=false&description=CouchBase的使用01"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=CouchBase的使用01&body=Check out this article: http://shuai.in/durian/couchBase-tutorials/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/durian/couchBase-tutorials/&name=CouchBase的使用01&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/pie/durian/couchBase-tutorials/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/pie/durian/couchBase-tutorials/&text=CouchBase的使用01"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/pie/durian/couchBase-tutorials/&is_video=false&description=CouchBase的使用01"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CouchBase的使用01&body=Check out this article: http://shuai.in/pie/durian/couchBase-tutorials/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/pie/durian/couchBase-tutorials/&name=CouchBase的使用01&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -253,16 +253,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/durian/couchBase-tutorials/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/durian/couchBase-tutorials/&text=CouchBase的使用01"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/durian/couchBase-tutorials/&is_video=false&description=CouchBase的使用01"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=CouchBase的使用01&body=Check out this article: http://shuai.in/durian/couchBase-tutorials/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/durian/couchBase-tutorials/&name=CouchBase的使用01&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/pie/durian/couchBase-tutorials/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/pie/durian/couchBase-tutorials/&text=CouchBase的使用01"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/pie/durian/couchBase-tutorials/&is_video=false&description=CouchBase的使用01"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CouchBase的使用01&body=Check out this article: http://shuai.in/pie/durian/couchBase-tutorials/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/pie/durian/couchBase-tutorials/&title=CouchBase的使用01"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/pie/durian/couchBase-tutorials/&name=CouchBase的使用01&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
