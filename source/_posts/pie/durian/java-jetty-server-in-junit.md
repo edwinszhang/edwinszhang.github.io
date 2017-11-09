@@ -1,7 +1,7 @@
 ---
 title: Java unit test中启用Jetty Server
 date: 2015-04-29 10:38:10
-categories: [Programming]
+categories: [programming, test]
 tags:
 cover: "https://www.openshift.com/images/openshift.svg"
 ---

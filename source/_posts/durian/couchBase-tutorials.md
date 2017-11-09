@@ -1,8 +1,8 @@
 ---
 title:  "CouchBase的使用01"
 date: 2015-07-22 10:38:10
-categories: [Programming]
-tags: [Programming, CouchBase]
+categories: [programming]
+tags: [programming, couchbase]
 cover: 'https://ironcorelabs.com/davenport/img/davenport-logo.png'
 ---
 

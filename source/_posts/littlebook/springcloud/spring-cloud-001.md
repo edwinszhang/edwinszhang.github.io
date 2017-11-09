@@ -1,7 +1,7 @@
 ---
 title: "[Little Book] Spring Cloud 手记 001"
 date: 2017-11-01 12:54:20
-tags: [Programming, SpringBoot, LittleBook, SpringCloud]
+tags: [programming, springboot, littlebook, springcloud]
 ---
 [#IMG - Spring Cloud Projects](http://wx3.sinaimg.cn/mw690/897b1cc3ly1fl2qyqm1hgj20pk0cttco.jpg)
 ## 官方文档

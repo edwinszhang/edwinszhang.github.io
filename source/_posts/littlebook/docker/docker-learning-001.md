@@ -1,6 +1,6 @@
 ---
 title: Docker 学习笔记（一）
-tags: [Programming, Docker]
+tags: [programming, docker]
 date: 2017-10-03 10:12:10
 ---
 
@@ -22,7 +22,7 @@ date: 2017-10-03 10:12:10
 ![Container diagram](https://www.docker.com/sites/default/files/Container%402x.png)
 
 ## Hello world
-测试 Docker 环境
+测试 docker 环境
 
 ```
 $ docker run hello-world
@@ -30,4 +30,4 @@ $ docker run hello-world
 
 国内会报错 timeout。可以参考 [这篇文章](https://my.oschina.net/nevermissing/blog/760954)更新镜像源。
 国内可使用的镜像源：
-- [Docker 中国官方镜像加速](https://www.docker-cn.com/registry-mirror)
+- [docker 中国官方镜像加速](https://www.docker-cn.com/registry-mirror)

@@ -1,7 +1,7 @@
 ---
 title: "[Little Book] Spring Boot 手记 001"
 date: 2017-10-17 23:21:09
-tags: [Programming, SpringBoot, LittleBook]
+tags: [programming, springboot, littlebook]
 ---
 
 ## 官方文档
