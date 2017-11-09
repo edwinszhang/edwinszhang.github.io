@@ -9,7 +9,7 @@
     <meta name="description" content="Jetty 是一个开源的servlet容器，可以为java网络应用提供一个便捷快速的网络和web连接服务。 所谓便捷快速，是因为它以jar包的形式发布，简单易用，默认配置即可满足大部分的需求，嵌入到程序中所需代码非常少。 由于Jetty的易用，易嵌，可扩展，我们常将之用于我们的unit test当中。这里仅就unit test展开讨论。首先，我们用maven引入jar包，版本可以选择你希望的版本(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java unit test中启用Jetty Server">
-<meta property="og:url" content="http://shuai.in/littlebook/programming/java-jetty-server-in-junit/index.html">
+<meta property="og:url" content="http://shuai.in/durian/java-jetty-server-in-junit/index.html">
 <meta property="og:site_name" content="Shuai">
 <meta property="og:description" content="Jetty 是一个开源的servlet容器，可以为java网络应用提供一个便捷快速的网络和web连接服务。 所谓便捷快速，是因为它以jar包的形式发布，简单易用，默认配置即可满足大部分的需求，嵌入到程序中所需代码非常少。 由于Jetty的易用，易嵌，可扩展，我们常将之用于我们的unit test当中。这里仅就unit test展开讨论。首先，我们用maven引入jar包，版本可以选择你希望的版本(">
 <meta property="og:updated_time" content="2017-10-03T04:04:54.000Z">
@@ -67,7 +67,7 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/littlebook/programming/couchBase-tutorials/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" href="/durian/couchBase-tutorials/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
@@ -81,16 +81,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&text=Java unit test中启用Jetty Server"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&is_video=false&description=Java unit test中启用Jetty Server"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Java unit test中启用Jetty Server&body=Check out this article: http://shuai.in/littlebook/programming/java-jetty-server-in-junit/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&name=Java unit test中启用Jetty Server&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/durian/java-jetty-server-in-junit/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/durian/java-jetty-server-in-junit/&text=Java unit test中启用Jetty Server"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/durian/java-jetty-server-in-junit/&is_video=false&description=Java unit test中启用Jetty Server"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java unit test中启用Jetty Server&body=Check out this article: http://shuai.in/durian/java-jetty-server-in-junit/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/durian/java-jetty-server-in-junit/&name=Java unit test中启用Jetty Server&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -179,16 +179,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&text=Java unit test中启用Jetty Server"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&is_video=false&description=Java unit test中启用Jetty Server"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Java unit test中启用Jetty Server&body=Check out this article: http://shuai.in/littlebook/programming/java-jetty-server-in-junit/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/programming/java-jetty-server-in-junit/&name=Java unit test中启用Jetty Server&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/durian/java-jetty-server-in-junit/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/durian/java-jetty-server-in-junit/&text=Java unit test中启用Jetty Server"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/durian/java-jetty-server-in-junit/&is_video=false&description=Java unit test中启用Jetty Server"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java unit test中启用Jetty Server&body=Check out this article: http://shuai.in/durian/java-jetty-server-in-junit/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/durian/java-jetty-server-in-junit/&title=Java unit test中启用Jetty Server"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/durian/java-jetty-server-in-junit/&name=Java unit test中启用Jetty Server&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>

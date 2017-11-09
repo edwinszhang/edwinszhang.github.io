@@ -10,7 +10,7 @@
 <meta name="keywords" content="Programming,Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker 学习笔记（一）">
-<meta property="og:url" content="http://shuai.in/littlebook/docker/littlebook-docker-learning-001/index.html">
+<meta property="og:url" content="http://shuai.in/littlebook/docker/docker-learning-001/index.html">
 <meta property="og:site_name" content="Shuai">
 <meta property="og:description" content="ConceptsImageImage 是轻量级的集合，包含了自定义的配置文件、依赖库、环境变量等。 ContainerContainer 是 Image 的运行状态。独立存在于内存中，与宿主机器隔离，只通过 port 进行通信。一个 Image 可以运行产生多个 Container, 每个都具有独立的内存与进程。你可以使用 docker ps 查看进程。 Container vs. Virtual">
 <meta property="og:image" content="https://www.docker.com/sites/default/files/VM%402x.png">
@@ -71,10 +71,10 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/hello-hexo/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" href="/littlebook/docker/docker-learning-002/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
-        <li><a class="icon" href="/littlebook/programming/couchBase-tutorials/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" href="/durian/couchBase-tutorials/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -87,16 +87,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&text=Docker 学习笔记（一）"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&is_video=false&description=Docker 学习笔记（一）"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Docker 学习笔记（一）&body=Check out this article: http://shuai.in/littlebook/docker/littlebook-docker-learning-001/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&name=Docker 学习笔记（一）&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/docker/docker-learning-001/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/docker/docker-learning-001/&text=Docker 学习笔记（一）"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/docker/docker-learning-001/&is_video=false&description=Docker 学习笔记（一）"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Docker 学习笔记（一）&body=Check out this article: http://shuai.in/littlebook/docker/docker-learning-001/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/docker/docker-learning-001/&name=Docker 学习笔记（一）&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -187,16 +187,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&text=Docker 学习笔记（一）"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&is_video=false&description=Docker 学习笔记（一）"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Docker 学习笔记（一）&body=Check out this article: http://shuai.in/littlebook/docker/littlebook-docker-learning-001/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/docker/littlebook-docker-learning-001/&name=Docker 学习笔记（一）&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/docker/docker-learning-001/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://shuai.in/littlebook/docker/docker-learning-001/&text=Docker 学习笔记（一）"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://shuai.in/littlebook/docker/docker-learning-001/&is_video=false&description=Docker 学习笔记（一）"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Docker 学习笔记（一）&body=Check out this article: http://shuai.in/littlebook/docker/docker-learning-001/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://shuai.in/littlebook/docker/docker-learning-001/&title=Docker 学习笔记（一）"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://shuai.in/littlebook/docker/docker-learning-001/&name=Docker 学习笔记（一）&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
