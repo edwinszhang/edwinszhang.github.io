@@ -131,7 +131,7 @@
   <div class="content" itemprop="articleBody">
     <p>Jetty 是一个开源的servlet容器，可以为java网络应用提供一个便捷快速的网络和web连接服务。</p>
 <p>所谓便捷快速，是因为它以jar包的形式发布，简单易用，默认配置即可满足大部分的需求，嵌入到程序中所需代码非常少。</p>
-<p>由于Jetty的易用，易嵌，可扩展，我们常将之用于我们的unit test当中。这里仅就unit test展开讨论。<br><br><br>首先，我们用maven引入jar包，版本可以选择你希望的版本(你可以在<a href="http://www.eclipse.org/jetty/documentation/" target="_blank" rel="external">Jetty官网</a>上找到相关版本号)。</p>
+<p>由于Jetty的易用，易嵌，可扩展，我们常将之用于我们的unit test当中。这里仅就unit test展开讨论。<br><br><br>首先，我们用maven引入jar包，版本可以选择你希望的版本(你可以在<a href="http://www.eclipse.org/jetty/documentation/" target="_blank" rel="noopener">Jetty官网</a>上找到相关版本号)。</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">jettyVersion</span>&gt;</span>9.0.2.v20130417<span class="tag">&lt;/<span class="name">jettyVersion</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.eclipse.jetty<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jetty-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;jettyVersion&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>如果我们在maven框架下使用jetty plugin,运行 <code>mvn jetty:run</code> 等命令, 须配置</p>
@@ -208,7 +208,7 @@
     
     <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2017 Shuai
+    Copyright &copy; 2018 Shuai
   </div>
   <div class="footer-right">
     <nav>

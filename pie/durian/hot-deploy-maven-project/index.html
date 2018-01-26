@@ -145,7 +145,7 @@
 </li>
 </ol>
 <p>完成以上设置后，每次更改代码时， tomcat 会自动感知修改并加载，不需要手动部署项目或重启。</p>
-<h2 id="Maven-项目"><a href="#Maven-项目" class="headerlink" title="Maven 项目"></a>Maven 项目</h2><p>参考<a href="https://github.com/junehappylove/june.web.new/wiki/maven-tomcat-plugin%E5%AE%9E%E7%8E%B0%E7%83%AD%E9%83%A8%E7%BD%B2" target="_blank" rel="external">maven tomcat plugin 实现热部署</a>, 这里精简后如下:</p>
+<h2 id="Maven-项目"><a href="#Maven-项目" class="headerlink" title="Maven 项目"></a>Maven 项目</h2><p>参考<a href="https://github.com/junehappylove/june.web.new/wiki/maven-tomcat-plugin%E5%AE%9E%E7%8E%B0%E7%83%AD%E9%83%A8%E7%BD%B2" target="_blank" rel="noopener">maven tomcat plugin 实现热部署</a>, 这里精简后如下:</p>
 <ol>
 <li><p>在 tomcat 中配置用户权限, 即添加管理员帐号<br>修改 conf /tomcat-user.xml 文件</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-gui"</span> /&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-script"</span> /&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"tomcat"</span> <span class="attr">password</span>=<span class="string">"tomcat"</span> <span class="attr">roles</span>=<span class="string">"manager-gui, manager-script"</span> /&gt;</span></div></pre></td></tr></table></figure>
@@ -227,7 +227,7 @@
     
     <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2017 Shuai
+    Copyright &copy; 2018 Shuai
   </div>
   <div class="footer-right">
     <nav>
