@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
     <!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="ConceptsImageImage 是轻量级的集合，包含了自定义的配置文件、依赖库、环境变量等。 ContainerContainer 是 Image 的运行状态。独立存在于内存中，与宿主机器隔离，只通过 port 进行通信。一个 Image 可以运行产生多个 Container, 每个都具有独立的内存与进程。你可以使用 docker ps 查看进程。 Container vs. Virtual">
 <meta name="keywords" content="programming,docker">
 <meta property="og:type" content="article">
@@ -13,6 +13,7 @@
 <meta property="og:url" content="http://shuai.in/littlebook/docker/docker-learning-001/index.html">
 <meta property="og:site_name" content="Shuai">
 <meta property="og:description" content="ConceptsImageImage 是轻量级的集合，包含了自定义的配置文件、依赖库、环境变量等。 ContainerContainer 是 Image 的运行状态。独立存在于内存中，与宿主机器隔离，只通过 port 进行通信。一个 Image 可以运行产生多个 Container, 每个都具有独立的内存与进程。你可以使用 docker ps 查看进程。 Container vs. Virtual">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="https://www.docker.com/sites/default/files/VM%402x.png">
 <meta property="og:image" content="https://www.docker.com/sites/default/files/Container%402x.png">
 <meta property="og:updated_time" content="2017-11-09T08:28:55.981Z">
@@ -67,7 +68,7 @@
         
       </ul>
     </span>
-    <br/>
+    <br>
     <span id="actions">
       <ul>
         
@@ -84,7 +85,7 @@
       <span id="i-top" class="info" style="display:none;">Back to top</span>
       <span id="i-share" class="info" style="display:none;">Share post</span>
     </span>
-    <br/>
+    <br>
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://shuai.in/littlebook/docker/docker-learning-001/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
@@ -109,7 +110,7 @@
     
     <div class="content index width mx-auto px2 my4">
         
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
@@ -119,7 +120,7 @@
 
 
     <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <span itemprop="name">Shuai</span>
       </span>
       
@@ -145,7 +146,7 @@
 <h2 id="Container-vs-Virtual-Machine"><a href="#Container-vs-Virtual-Machine" class="headerlink" title="Container vs. Virtual Machine"></a>Container vs. Virtual Machine</h2><h3 id="VM-Diagram"><a href="#VM-Diagram" class="headerlink" title="VM Diagram"></a>VM Diagram</h3><p><img src="https://www.docker.com/sites/default/files/VM%402x.png" alt="VM Diagram"></p>
 <h3 id="Container-diagram"><a href="#Container-diagram" class="headerlink" title="Container diagram"></a>Container diagram</h3><p><img src="https://www.docker.com/sites/default/files/Container%402x.png" alt="Container diagram"></p>
 <h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h2><p>测试 docker 环境</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker run hello-world</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker run hello-world</span><br></pre></td></tr></table></figure>
 <p>国内会报错 timeout。可以参考 <a href="https://my.oschina.net/nevermissing/blog/760954" target="_blank" rel="noopener">这篇文章</a>更新镜像源。<br>国内可使用的镜像源：</p>
 <ul>
 <li><a href="https://www.docker-cn.com/registry-mirror" target="_blank" rel="noopener">docker 中国官方镜像加速</a></li>
