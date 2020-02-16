@@ -24,7 +24,7 @@ date: 2017-10-03 10:12:10
 ## Hello world
 测试 docker 环境
 
-```
+```shell
 $ docker run hello-world
 ```
 
